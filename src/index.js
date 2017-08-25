@@ -2,6 +2,7 @@ import _ from 'lodash'
 // 引入 css 文件
 import './style.css'
 import Icon from './icon.jpg'
+import Data from './data.xml'
 
 function component() {
   var element = document.createElement('div');
@@ -16,6 +17,8 @@ function component() {
   image.src = Icon;
 
   element.appendChild(image);
+
+  console.log(Data);
 
   return element;
 }
