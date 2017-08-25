@@ -1,6 +1,7 @@
 import _ from 'lodash'
 // 引入 css 文件
 import './style.css'
+import Icon from './icon.jpg'
 
 function component() {
   var element = document.createElement('div');
@@ -9,6 +10,12 @@ function component() {
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   // 在元素上动态添加一个名叫 hello 的 class
   element.classList.add('hello');
+
+  // 添加图片到已存在的 div 中
+  let image = new Image();
+  image.src = Icon;
+
+  element.appendChild(image);
 
   return element;
 }
