@@ -9,38 +9,5 @@ module.exports = {
     filename: 'bundle.js',
     // 打包文件的输出路径
     path: path.resolve(__dirname, 'dist')
-  },
-  module: {
-    // 规则列表
-    rules: [
-      // 第一个规则
-      {
-        // 使用正则找到所有的 .css 文件
-        test: /\.css$/,
-        // 加载器列表
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.(gif|png|jpg|svg)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      {
-        test: /\.xml$/,
-        use: [
-          'xml-loader'
-        ]
-      }
-    ]
   }
 }
