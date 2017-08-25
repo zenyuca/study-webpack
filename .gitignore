@@ -1,8 +1,2 @@
 node_modules/
-
-dist/*.js
-dist/*.jpg
-dist/*.ttf
-dist/*.eot
-dist/*.woff
-dist/*.svg
+dist/
