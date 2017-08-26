@@ -16,7 +16,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   // 资源映射工具，如果报错，可以定位的源码上，而不是打包后的文件上。
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
+  // devtool 选项详情地址 https://webpack.js.org/configuration/devtool/
+  devtool: 'source-map',
   plugins: [
     // 自动生成 html 文件，文件自动关联所有打包好的资源
     new HtmlWebpackPlugin({
