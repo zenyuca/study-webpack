@@ -19,6 +19,9 @@ module.exports = {
   // devtool: 'inline-source-map',
   // devtool 选项详情地址 https://webpack.js.org/configuration/devtool/
   devtool: 'source-map',
+  devServer: {
+    contentBase: './dist'
+  },
   plugins: [
     // 自动生成 html 文件，文件自动关联所有打包好的资源
     new HtmlWebpackPlugin({
