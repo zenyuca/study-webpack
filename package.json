@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    // 开启 webpack 的 watch 模式时，源码中的任何一次保存，都会自动打包编译。
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",
