@@ -13,7 +13,8 @@ module.exports = {
     // 打包完成的文件名
     filename: '[name].bundle.js',
     // 打包文件的输出路径
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   // 资源映射工具，如果报错，可以定位的源码上，而不是打包后的文件上。
   // devtool: 'inline-source-map',
