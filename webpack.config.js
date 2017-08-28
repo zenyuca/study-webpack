@@ -18,6 +18,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
   // 资源映射工具，如果报错，可以定位的源码上，而不是打包后的文件上。
   // devtool: 'inline-source-map',
   // devtool 选项详情地址 https://webpack.js.org/configuration/devtool/
